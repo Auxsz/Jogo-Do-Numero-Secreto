@@ -8,12 +8,11 @@ let tentativas = 1;
 
 exibirMensagemInicial()
 
-function exibirTexto(tag, texto) {
-    let campo = document.querySelector(tag)
-        campo.innerHTML = texto;
-        responsiveVoice.speak(texto, 'Brazilian Portuguese Female',{rate:1.2})
-    };
-
+function exibirTexto(tag, texto){
+    let campo = document.querySelector(tag);
+    campo.innerHTML = texto;
+    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
+}
 exibirTexto('h1','Escolha um Numero entre 1 e 10');
 exibirTexto('p','Jogo do numero Secreto');
 
